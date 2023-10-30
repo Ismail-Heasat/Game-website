@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style_game.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Games to play </h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howtoplay.html">How to Play</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="wpp">
+
+    <h1>Guess the Number Game</h1>
+    <div class="game-container">
+        <div class="user-inputs">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="number" id="guess" min="1" max="100" placeholder="Your Guess">
+            <button onclick="checkGuess()">Submit Guess</button>
+        </div>
+        <div class="game-info">
+            <p>Tries left: <span id="tries">10</span></p>
+            <p>Your score: <span id="score">0</span>/10</p>
+        </div>
+    </div>
+    <h2>Leaderboard</h2>
+    <ol id="leaderboard"></ol>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
